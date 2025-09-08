@@ -44,7 +44,7 @@ while chance==1:
 
 
     
-#comeback to this and re do the solution(match with the vid solution)
+
 
 
 

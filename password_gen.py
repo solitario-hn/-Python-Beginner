@@ -1,32 +1,4 @@
-#using for loops
-#using sum fucntion
-#self tryna add numbers from 1 to 100
-x=range(101)
-sum=0
-print(x)
-for i in x:
-    sum+=i
-print(sum)
-print(x)             #range function doesn't do anything by itself it needs another fucntion suppose for in range()
-
-#fizzbuzz game
-
-num=range(1,101,1)
-result=""
-for x in num:
-    if x%3==0 and x%5==0:
-        result="FIZZBUZZ"
-        print(result)
-    elif x%3==0:
-        result="Fizz"
-        print(result)
-    elif x%5==0:
-        result="Buzz"
-        print(result)
-    else:
-        print(x)
-    
-#password genrator project
+    #password genrator project
 import random
 letters=["a","b","c","d","e","f","g","h","i","j","k","l","m","n",'o','p','q','r','s','t','u','v','w','x','y','z','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
 numbers=['0','1','2','3','4','5','6','7','8','9']

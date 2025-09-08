@@ -1,3 +1,83 @@
+#using for loops
+#using sum fucntion
+#self tryna add numbers from 1 to 100
+x=range(101)
+sum=0
+print(x)
+for i in x:
+    sum+=i
+print(sum)
+print(x)             #range function doesn't do anything by itself it needs another fucntion suppose for in range()
+
+#fizzbuzz game
+
+num=range(1,101,1)
+result=""
+for x in num:
+    if x%3==0 and x%5==0:
+        result="FIZZBUZZ"
+        print(result)
+    elif x%3==0:
+        result="Fizz"
+        print(result)
+    elif x%5==0:
+        result="Buzz"
+        print(result)
+    else:
+        print(x)
+
+
+
+def life_in_weeks(age):
+    assumed_total_lifepan=90
+    total_weeks=90*52
+    age_left=total_weeks-52*age
+    print(f"You have {age_left} weeks left")
+    num=age_left*7
+    print(f"you have {num} days left")
+
+#print("WELCOME TO LIFESPAN CALCULATOR\n")
+#current_age=int(input("Please enter your current age:   "))   
+#life_in_weeks(current_age)
+
+
+def greet_with(name,location,day):
+    print(f"I actually met {name}")
+    print(f"in {location}")
+    print(f"on {day}")
+
+
+#greet_with("Om","Karnataka","Monday")
+#greet_with(location="chennai",day="tuesday",name="jack")
+ 
+#print("WELCOME TO THE LOVE CALCULATOR\n")
+
+def calculate_love_score(name1,name2):
+    word1="TRUE"
+    word2="LOVE"
+    match1=0
+    match2=0
+    for name in name1:
+        for word in word1:
+            if name==word:
+                match1+=1
+        for word in word2:
+            if name==word:
+                match1+=1 
+    for name in name2:
+        for word in word1:
+            if name==word:
+                match2+=1
+        for word in word2:
+            if name==word:
+                match2+=1                 
+    str(match1)
+    str(match2)
+    print(f"Your love score is :{match1}{match2}")                     
+           
+#name1=input("Enter the first person name:      ").upper()
+#name2=input("Enter the second person name:     ").upper()
+#calculate_love_score(name1,name2)
 #using dictionaries in python
 
 student={}
@@ -144,4 +224,60 @@ nisha=10
 def name():
     global nisha
     nisha+=10           #by using global it would now consider the nisha defined outside the function and modifying the variable is now possible!
-     
+    
+    
+import random
+import logo
+
+def life_in_weeks(age):
+    assumed_total_lifepan=90
+    total_weeks=90*52
+    age_left=total_weeks-52*age
+    print(f"You have {age_left} weeks left")
+    num=age_left*7
+    print(f"you have {num} days left")
+
+#print("WELCOME TO LIFESPAN CALCULATOR\n")
+#current_age=int(input("Please enter your current age:   "))   
+#life_in_weeks(current_age)
+
+
+def greet_with(name,location,day):
+    print(f"I actually met {name}")
+    print(f"in {location}")
+    print(f"on {day}")
+
+
+#greet_with("Om","Karnataka","Monday")
+#greet_with(location="chennai",day="tuesday",name="jack")
+ 
+#print("WELCOME TO THE LOVE CALCULATOR\n")
+
+def calculate_love_score(name1,name2):
+    word1="TRUE"
+    word2="LOVE"
+    match1=0
+    match2=0
+    for name in name1:
+        for word in word1:
+            if name==word:
+                match1+=1
+        for word in word2:
+            if name==word:
+                match1+=1 
+    for name in name2:
+        for word in word1:
+            if name==word:
+                match2+=1
+        for word in word2:
+            if name==word:
+                match2+=1                 
+    str(match1)
+    str(match2)
+    print(f"Your love score is :{match1}{match2}")                     
+           
+#name1=input("Enter the first person name:      ").upper()
+#name2=input("Enter the second person name:     ").upper()
+#calculate_love_score(name1,name2)
+
+      
